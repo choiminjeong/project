@@ -8,10 +8,20 @@ from pymongo import MongoClient           # pymongo를 임포트 하기(패키�
 client = MongoClient('localhost', 27017)  # mongoDB는 27017 포트로 돌아갑니다.
 db = client.project                      # 'dbsparta'라는 이름의 db를 만듭니다.
 
-## HTML을 주는 부분
+## 메인HTML을 주는 부분
 @app.route('/')
 def home():
    return render_template('index.html')
+
+## 대여HTML을 주는 부분
+@app.route('/rent')
+def rent():
+   return render_template('rent.html')
+
+## 대여HTML을 주는 부분
+@app.route('/buy')
+def buy():
+   return render_template('buy.html')
 
 @app.route('/memo', methods=['GET'])
 def listing():
