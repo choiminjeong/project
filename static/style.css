@@ -3,7 +3,18 @@ body {
 	background: #353535;
 	color: #FFF;
 }
+/* div.container{
+	width: 1250px;
+	box-align: center;
+} */
 footer {
+	font-size: 50px;
+	/* padding: 50px 0 0 100px; */
+	font-family: 'Pacifico', cursive;
+	color: #BDC3C7;
+	right: 0px;
+	bottom: 0px;
+	position: fixed;
 	margin-bottom: 0 !important;
 	margin-top: 80px;
   }
