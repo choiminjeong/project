@@ -1,49 +1,27 @@
-/* @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700); */
-
 body {
 	font-family: 'Lato', sans-serif;
 	background: #353535;
 	color: #FFF;
 }
 footer {
-  margin-bottom: 0 !important;
-  margin-top: 80px;
-}
-footer p {
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
+	margin-bottom: 0 !important;
+	margin-top: 80px;
+  }
+  h1 {
 	color: #BDC3C7;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 100px;
-  margin: 120px auto
 }
-
+.mrng-60-top {
+	margin-top: 200px;
+}
+.row-btn {
+	margin-left: 90px;
+	margin-right: 90px;
+}
 /* Global Button Styles */
-/* a.animated-button:link, a.animated-button:visited {
-	position: relative;
-	display: block;
-	margin: 30px 100px 0px 100px;
-	padding: 14px 15px;
-	color: #fff;
-	font-size:14px;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	overflow: hidden;
-	letter-spacing: .08em;
-	border-radius: 0;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
-} */
+
 a.animated-button:link:after, a.animated-button:visited:after {
 	content: "";
 	position: absolute;
@@ -67,10 +45,10 @@ a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
 a.animated-button:link, a.animated-button:visited {
 	position: relative;
 	display: block;
-	margin: 30px 200px 0px 200px;
+	margin: 30px auto 0;
 	padding: 14px 15px;
 	color: #fff;
-	font-size:14px;
+	font-size:65px;
 	border-radius: 0;
 	font-weight: bold;
 	text-align: center;
@@ -84,46 +62,14 @@ a.animated-button:link, a.animated-button:visited {
 	-o-transition: all 1s ease;
 	transition: all 1s ease;
 }
-
-
-
-a.animated-button.thar-four {
-	color: #fff;
-	cursor: pointer;
-	display: block;
-	position: relative;
-	border: 2px solid #F7CA18;
-	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-	height: 150px;
+div.three {
+	margin-right: 100px;
+}
+a.rent {
 	width: 400px;
-	font-size: 50px;
-/* 0s; */
+	height: 150px;
+	
 }
-a.animated-button.thar-four:hover {
-	color: #000 !important;
-	background-color: transparent;
-	text-shadow: nthree;
-}
-a.animated-button.thar-four:hover:before {
-	left: 0%;
-	right: auto;
-	width: 100%;
-}
-a.animated-button.thar-four:before {
-	display: block;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	height: 100%;
-	width: 0px;
-	z-index: -1;
-	content: '';
-	color: #000 !important;
-	background: #F7CA18;
-	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-/* 0s; */
-}
-
 a.animated-button.thar-three {
 	color: #fff;
 	cursor: pointer;
@@ -131,9 +77,6 @@ a.animated-button.thar-three {
 	position: relative;
 	border: 2px solid #F7CA18;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-	height: 150px;
-	width: 400px;
-	font-size: 50px;
 /* 0s; */
 }
 a.animated-button.thar-three:hover {
@@ -151,6 +94,46 @@ a.animated-button.thar-three:before {
 	position: absolute;
 	top: 0px;
 	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background: #F7CA18;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+/* 0s; */
+}
+div.four {
+	margin-left: 100px;
+}
+a.buy {
+	width: 400px;
+	height: 150px;
+}
+a.animated-button.thar-four {
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid #F7CA18;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+/* 0s; */
+}
+a.animated-button.thar-four:hover {
+	color: #000 !important;
+	background-color: transparent;
+	text-shadow: nfour;
+}
+a.animated-button.thar-four:hover:before {
+	right: 0%;
+	left: auto;
+	width: 100%;
+}
+a.animated-button.thar-four:before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
 	height: 100%;
 	width: 0px;
 	z-index: -1;
