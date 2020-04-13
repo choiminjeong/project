@@ -45,9 +45,9 @@ html, body {
   }
   h1 {
     display: block;
-    margin: 0 auto 25px auto;
+    margin: 0 auto 50px auto;
     text-align: center;
-    font-size: 1.92em;
+    font-size: 3em;
     font-weight: 600;
     letter-spacing: -0.055em;
   }
@@ -61,10 +61,16 @@ html, body {
   }
   .container {
     position: relative;
-    margin: calc(75px + 2vh + 2vw) auto 0 auto;
+    /* margin: calc(75px + 2vh + 2vw) auto 0 auto; */
+    margin: 180px auto 0 auto;
     padding: 0;
     width: 100%;
     max-width: 840px;
+  }
+
+  h4{
+    margin: 20px auto auto 5px;
+    color: yellow;
   }
   .search-box {
     position: relative;
@@ -188,11 +194,11 @@ html, body {
   #search::selection {color: #FFFFFF; background: rgba(0,0,0,0.25);}
   
   footer {
-    font-size: 50px;
+    font-size: 30px;
     /* padding: 50px 0 0 100px; */
     font-family: 'Pacifico', cursive;
     color: #BDC3C7;
-    right: 0px;
+    right: 20px;
     bottom: 0px;
     position: fixed;
     margin-bottom: 0 !important;
