@@ -187,3 +187,14 @@ html, body {
   #search::-moz-selection {color: #FFFFFF; background: rgba(0,0,0,0.25);}
   #search::selection {color: #FFFFFF; background: rgba(0,0,0,0.25);}
   
+  footer {
+    font-size: 50px;
+    /* padding: 50px 0 0 100px; */
+    font-family: 'Pacifico', cursive;
+    color: #BDC3C7;
+    right: 0px;
+    bottom: 0px;
+    position: fixed;
+    margin-bottom: 0 !important;
+    margin-top: 80px;
+    }
