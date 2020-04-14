@@ -8,16 +8,17 @@ body {
 	box-align: center;
 } */
 footer {
-	font-size: 50px;
-	/* padding: 50px 0 0 100px; */
-	font-family: 'Pacifico', cursive;
-	color: #BDC3C7;
-	right: 0px;
-	bottom: 0px;
-	position: fixed;
-	margin-bottom: 0 !important;
-	margin-top: 80px;
-  }
+    font-size: 50px;
+    /* padding: 50px 0 0 100px; */
+    font-family: 'Pacifico', cursive;
+    color: #BDC3C7;
+    right: 20px;
+    bottom: 0px;
+    position: fixed;
+    margin-bottom: 0 !important;
+    margin-top: 80px;
+	}
+	
   h1 {
 	color: #BDC3C7;
   text-transform: uppercase;
