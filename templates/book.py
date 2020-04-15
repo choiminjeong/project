@@ -1,16 +1,34 @@
-import requests
+import urllib.request
+import urllib.parse
 from bs4 import BeautifulSoup
 
-# 타겟 URL을 읽어서 HTML를 받아오고,
-headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36'}
-data = requests.get('https://www.aladin.co.kr/home/welcome.aspx',headers=headers)
 
-# HTML을 BeautifulSoup이라는 라이브러리를 활용해 검색하기 용이한 상태로 만듦
-# soup이라는 변수에 "파싱 용이해진 html"이 담긴 상태가 됨
-# 이제 코딩을 통해 필요한 부분을 추출하면 된다.
-soup = BeautifulSoup(data.text, 'html.parser')
+plusUrl = urllib.parse.quote_plus(input('검색어를 입력하세요'))
 
-#############################
-# (입맛에 맞게 코딩)
-books = soup.select()
-#############################
+url = f'https://search.kyobobook.co.kr/web/search?vPstrKeyWord={plusUrl}&orderClick=LET'
+
+html = urllib.request.urlopen(url).read()
+soup = BeautifulSoup(html, 'html.parser')
+
+books = soup.find_all(class_='detail')
+# title = books.select_one('div.title > a > strong')
+for book in books:
+    img = soup.select_one('#search_list > tr > td.image > div.cover > a > img')
+    title = book.select('div.title > a')
+    author = book.select('div.author > a')
+    print(img)    # for a in img:
+    #     print(a)
+    # for i in title:
+    #     print(i.text.strip())
+    # for n in author:
+    #     print(n.text.strip())
+    #
+    print()
+
+
+
+#search_list > tr:nth-child(6) > td.image > div.cover > a > img
+#search_list > tr:nth-child(6) > td.detail > div.title > a > span.category2
+#search_list > tr:nth-child(6) > td.detail > div.title > a > strong
+
+#search_list > tr:nth-child(6) > td.detail > div.author
